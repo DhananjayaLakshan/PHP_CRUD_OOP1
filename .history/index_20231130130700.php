@@ -4,6 +4,7 @@
     $all = $data->fetchAll();
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,9 +24,11 @@
 
     <a href="signup.php"><button class="btn btn-primary addButton" id="addButton">Add</button></a>
 
+
     <table class="table table-dark">
         <thead>
             <tr>
+                
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Age</th>
@@ -33,21 +36,16 @@
             </tr>
         </thead>
         <tbody>
-            <?php
-            foreach ($all as $key => $val) {
-            ?>
-                <tr>
-                    <th><?= $val['firstName'] ?></th>
-                    <td><?= $val['lastName'] ?></td>
-                    <td><?= $val['age'] ?></td>
-                    <td style="width: 25%; text-align: center;">
-                        <button class="btn btn-success">UPDATE</button>
-                        <button class="btn btn-danger">DELETE</button>
-                    </td>
-                </tr>
-            <?php
-            }
-            ?>
+            <tr>
+                <th>Dhananjaya</th>
+                <td>Lakshan</td>
+                <td>25</td>
+                <td style="width: 25%; text-align: center;">
+                    <button class="btn btn-success">UPDATE</button>
+                    <button class="btn btn-danger">DELETE</button>
+                </td>
+            </tr>
+            
         </tbody>
     </table>
 
@@ -61,7 +59,10 @@
 
 
 
-    
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
