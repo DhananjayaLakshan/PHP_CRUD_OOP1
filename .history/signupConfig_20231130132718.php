@@ -104,8 +104,9 @@ class signupConfig{
     public function delete(){
         try {
             $stm = $this->dbCnx->prepare("DELETE FROM users WHERE id=?");
-            $stm->execute([$this->id]);  // Corrected line
-            echo "<script>alert('Data deleted successfully'); document.location='index.php'</script>";
+            $stm->execute($this->id);
+            echo"<script> alert('data deleted successfully'); document.location='index.php'</script>";
+
         } catch (Exception $e) {
             return $e->getMessage();
         }

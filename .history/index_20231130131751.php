@@ -41,8 +41,8 @@
                     <td><?= $val['lastName'] ?></td>
                     <td><?= $val['age'] ?></td>
                     <td style="width: 25%; text-align: center;">
-                        <a href="#"><button class="btn btn-success">EDIT</button></a>
-                        <a href="delete.php?id=<?= $val['id'] ?>&req=delete"> <button class="btn btn-danger">DELETE</button></a>
+                        <a href="#"><button class="btn btn-success">UPDATE</button></a>
+                        <a href="#"> <button class="btn btn-danger">DELETE</button></a>
                     </td>
                 </tr>
             <?php
